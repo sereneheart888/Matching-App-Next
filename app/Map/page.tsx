@@ -29,7 +29,7 @@ export default function Home() {
   const handleClick = (e: MouseEvent<HTMLButtonElement>) => {
     console.log('EEEEE')
     // e.preventDefault()
-    router.push('/Map')
+    router.push('/Map/index')
     // router.push('../components/Map')
   }
   return (
@@ -38,17 +38,7 @@ export default function Home() {
       />
       <BackContent />
       <TopNav title='RealSpot'><Question /></TopNav>
-      <RefreshBtn title="このエリアでさがす"><Refresh /></RefreshBtn>
-      <HomeContent>
-        <Image src="/user.png" width={230} height={200} className="relative rounded-md ml-[13px] z-[0]" alt="user.png" />
-        <ResultBtn />
-        <MarkerBtn title="現在地付近のメンバー" onClick={handleClick}><WhitePin /></MarkerBtn>
-      </HomeContent>
-      <SearchContent>
-        <SearchBtn title1="年収で" title2="さがす"><CoinIcon /></SearchBtn>
-        <SearchBtn title1="性別で" title2="さがす"><UsersIcon /></SearchBtn>
-        <SearchBtn title1="年齢で" title2="さがす"><SearchIcon /></SearchBtn>
-      </SearchContent>
+
       <BottomNav>
         <ItemBtn title="ホーム"><HomeIcon /></ItemBtn>
         <ItemBtn title="トーク"><MailIcon /></ItemBtn>
